@@ -14,7 +14,7 @@ div.banner > div.container{
     height: 100%
 }
 div.main{
-    padding-bottom:189px; /* 高さ50pxのフッターだから、その分空けてあげて */
+    padding-bottom:600px; /* 高さ50pxのフッターだから、その分空けてあげて */
 }
 div.footer{
     position: absolute;  /* フッターを絶対配置に指定する設定 */
