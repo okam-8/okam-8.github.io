@@ -14,13 +14,13 @@ div.banner > div.container{
     height: 100%
 }
 div.main{
-    padding-bottom:50px; /* 高さ50pxのフッターだから、その分空けてあげて */
+    padding-bottom:500px; /* 高さ50pxのフッターだから、その分空けてあげて */
 }
 div.footer{
     position: absolute;  /* フッターを絶対配置に指定する設定 */
     bottom: 0;           /* フッターを一番下に置くぜ！ */
     width: 100%
-    height: 50px;        /* フッターの高さ */
+    height: 500px;        /* フッターの高さ */
 }
 
 
