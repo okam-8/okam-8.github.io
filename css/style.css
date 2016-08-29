@@ -4,11 +4,31 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
+/*----- ここからが重要なフッター下部設定 -----*/
+
+div.banner > div.container{
+    position: relative;      /* フッターを位置指定するための基準設定を、まずフッターの親に書くよ */
+    min-height: 100%;        /* 全部囲ってるdiv#containerは、”最低でも”高さ100%（＝ブラウザ画面めいっぱい）にしてね */
+                             /* min-heightは最低限の高さを指定するプロパティ。コンテンツ量が増えれば、高さは伸びるよ */
+    height: auto !important; /* IE6じゃmin-height使えないからIE6専用にこの行と次の行をこう書くよ */
+    height: 100%
+}
+div.main{
+    padding-bottom:50px; /* 高さ50pxのフッターだから、その分空けてあげて */
+}
+div.footer{
+    position: absolute;  /* フッターを絶対配置に指定する設定 */
+    bottom: 0;           /* フッターを一番下に置くぜ！ */
+    width: 100%
+    height: 50px;        /* フッターの高さ */
+}
+
+
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
-html, body{
+html, body{height: 100%;
   font-family: 'Montserrat', sans-serif;
    font-size: 100%;
    background:#fff; 
