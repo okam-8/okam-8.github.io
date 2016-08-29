@@ -519,6 +519,7 @@ ul.social {
 	padding:0;
 	list-style: none;
 	float:right;
+	background:white;
 }
 ul.social li:first-child {
 	margin-left: 0;
